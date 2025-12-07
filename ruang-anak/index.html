@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Anak - Platform Kreativitas dan Pembelajaran Anak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-palette"></i> Ruang Anak
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#test">Tes Diri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#art">Tes Seni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#learning">Pembelajaran</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#marketplace">Karya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#books">Buku</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Wujudkan Kreativitas Anak Indonesia
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Platform pembelajaran seni dan pengembangan diri untuk anak usia 5-13 tahun dengan pendekatan yang menyenangkan dan edukatif.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-light btn-lg" onclick="showTestModal()">
+                            <i class="fas fa-clipboard-check"></i> Mulai Tes Diri
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" onclick="showArtTestModal()">
+                            <i class="fas fa-paint-brush"></i> Tes Kemampuan Seni
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <i class="fas fa-child-paint" style="font-size: 300px; color: rgba(255,255,255,0.2);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Fitur Unggulan Ruang Anak</h2>
+                    <p class="lead">Platform lengkap untuk mengembangkan potensi anak</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Tes Mengenali Diri</h5>
+                            <p class="card-text">Menggali pengetahuan dan kepribadian anak melalui tes komprehensif untuk usia 5-13 tahun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-palette fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Tes Kemampuan Seni</h5>
+                            <p class="card-text">Platform menggambar digital dengan alat pewarna lengkap untuk mengasah kreativitas seni rupa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-video fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Pembelajaran Online</h5>
+                            <p class="card-text">Video interaktif langsung dengan guru seni dan psikiater untuk pembelajaran optimal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self-Recognition Test Section -->
+    <section id="test" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Tes Mengenali Diri Anak</h2>
+                    <p class="lead mb-4">
+                        Temukan potensi dan kepribadian anak Anda melalui tes yang dirancang khusus untuk anak usia 5-13 tahun.
+                    </p>
+                    <button class="btn btn-primary btn-lg" onclick="startSelfTest()">
+                        <i class="fas fa-play"></i> Mulai Tes Sekarang
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><i class="fas fa-book"></i> Tes Pengetahuan Umum</h5>
+                            <p>20 soal tentang pengetahuan dasar yang sesuai dengan tingkat usia anak.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><i class="fas fa-user-circle"></i> Tes Kepribadian</h5>
+                            <p>15 soal untuk mengidentifikasi tipe kepribadian dan preferensi belajar anak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Test Section -->
+    <section id="art" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Tes Kemampuan Seni Rupa</h2>
+                    <p class="lead mb-4">
+                        Berikan kesempatan anak untuk mengekspresikan kreativitasnya melalui seni lukis digital.
+                    </p>
+                    <button class="btn btn-success btn-lg" onclick="startArtTest()">
+                        <i class="fas fa-paint-brush"></i> Mulai Menggambar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section id="learning" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Pembelajaran Interaktif</h2>
+                    <p class="lead mb-4">
+                        Belajar langsung dengan guru seni dan konsultasi dengan psikiater melalui video call.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
+                            <h5>Kelas Seni Online</h5>
+                            <p>Pembelajaran seni rupa dan lukis dengan guru berpengalaman.</p>
+                            <button class="btn btn-primary" onclick="bookArtClass()">Booking Kelas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-md fa-3x text-info mb-3"></i>
+                            <h5>Konsultasi Parenting</h5>
+                            <p>Sesi konsultasi dengan psikiater tentang pengasuhan anak.</p>
+                            <button class="btn btn-info" onclick="bookConsultation()">Booking Konsultasi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Dukung Ruang Anak</h2>
+                    <p class="lead mb-4">
+                        Dukung terus platform pembelajaran anak dengan kontribusi sukarela sesuai kemampuan Anda.
+                    </p>
+                    <button class="btn btn-warning btn-lg" onclick="showPaymentModal()">
+                        <i class="fas fa-heart"></i> Berikan Dukungan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Galeri Karya Anak</h2>
+                    <p class="lead mb-4">
+                        Karya-karya luar biasa dari anak-anak Indonesia yang akan dipasarkan melalui media sosial.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5" id="artGallery">
+                <!-- Art gallery will be populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Perpustakaan Digital</h2>
+                    <p class="lead mb-4">
+                        Kumpulan buku seni rupa dan lukis yang dapat diunduh gratis atau dipesan dalam bentuk cetak.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><i class="fas fa-book-open"></i> Buku Digital Gratis</h5>
+                            <p>Unduh buku panduan seni rupa dan lukis dalam format PDF.</p>
+                            <button class="btn btn-primary" onclick="showDigitalBooks()">Lihat Koleksi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><i class="fas fa-book"></i> Buku Cetak Berbayar</h5>
+                            <p>Pesan buku seni berkualitas tinggi untuk koleksi pribadi.</p>
+                            <button class="btn btn-success" onclick="showPrintBooks()">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Video Pembelajaran</h2>
+                    <p class="lead mb-4">
+                        Koleksi video edukatif tentang seni rupa dan lukis yang dapat ditonton online atau diunduh.
+                    </p>
+                    <button class="btn btn-info btn-lg" onclick="showVideoLibrary()">
+                        <i class="fas fa-play-circle"></i> Tonton Video
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Hubungi Kami</h2>
+                    <p class="lead mb-4">
+                        Sampaikan keluh kesah, kritik, dan saran Anda untuk pengembangan Ruang Anak.
+                    </p>
+                    <button class="btn btn-secondary btn-lg" onclick="showFeedbackModal()">
+                        <i class="fas fa-comments"></i> Kirim Feedback
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-palette"></i> Ruang Anak</h5>
+                    <p>Platform kreativitas dan pembelajaran untuk anak Indonesia.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ikuti Kami</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-tiktok fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kontak</h5>
+                    <p><i class="fas fa-envelope"></i> info@ruanganak.id</p>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2024 Ruang Anak. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Self Test Modal -->
+    <div class="modal fade" id="selfTestModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tes Mengenali Diri Anak</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="testContent">
+                    <!-- Test content will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Art Test Modal -->
+    <div class="modal fade" id="artTestModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tes Kemampuan Seni Rupa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <canvas id="drawingCanvas" width="800" height="500" style="border: 1px solid #ccc;"></canvas>
+                    <div class="mt-3">
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-outline-secondary" onclick="selectTool('pen')"><i class="fas fa-pen"></i> Pulpen</button>
+                            <button class="btn btn-outline-secondary" onclick="selectTool('brush')"><i class="fas fa-paint-brush"></i> Kuas</button>
+                            <button class="btn btn-outline-secondary" onclick="selectTool('eraser')"><i class="fas fa-eraser"></i> Penghapus</button>
+                        </div>
+                        <div class="mt-2">
+                            <label>Warna:</label>
+                            <input type="color" id="colorPicker" value="#000000">
+                            <label class="ms-3">Ukuran:</label>
+                            <input type="range" id="brushSize" min="1" max="20" value="3">
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-danger" onclick="clearCanvas()">Hapus</button>
+                            <button class="btn btn-success" onclick="saveArtwork()">Simpan Karya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dukung Ruang Anak</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bantu kami terus mengembangkan platform pembelajaran untuk anak Indonesia.</p>
+                    <div class="mb-3">
+                        <label class="form-label">Nama Anda:</label>
+                        <input type="text" class="form-control" id="donorName">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="donorEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Jumlah Dukungan (Rp):</label>
+                        <input type="number" class="form-control" id="donationAmount" placeholder="Masukkan jumlah sesuai hati Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Metode Pembayaran:</label>
+                        <select class="form-control" id="paymentMethod">
+                            <option value="transfer">Transfer Bank</option>
+                            <option value="ewallet">E-Wallet</option>
+                            <option value="qris">QRIS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary" onclick="processPayment()">Proses Pembayaran</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Call Modal -->
+    <div class="modal fade" id="videoCallModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Video Call - <span id="callTitle"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="videoContainer" style="background: #000; height: 400px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-video fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6>Kontrol Video</h6>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-success" onclick="startVideoCall()">
+                                            <i class="fas fa-phone"></i> Mulai Panggilan
+                                        </button>
+                                        <button class="btn btn-danger" onclick="endVideoCall()">
+                                            <i class="fas fa-phone-slash"></i> Akhiri Panggilan
+                                        </button>
+                                        <button class="btn btn-secondary" onclick="toggleMute()">
+                                            <i class="fas fa-microphone"></i> Mute/Unmute
+                                        </button>
+                                        <button class="btn btn-secondary" onclick="toggleVideo()">
+                                            <i class="fas fa-video"></i> On/Off Kamera
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

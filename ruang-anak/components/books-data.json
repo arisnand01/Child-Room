@@ -1,0 +1,202 @@
+{
+  "digital_books": [
+    {
+      "id": 1,
+      "title": "Panduan Lengkap Menggambar untuk Anak",
+      "author": "Tim Ruang Anak",
+      "pages": 120,
+      "file_size": "15 MB",
+      "format": "PDF",
+      "category": "Teknik Dasar",
+      "age_range": "5-13 tahun",
+      "cover_image": "book-cover-1.jpg",
+      "description": "Panduan komprehensif menggambar dari bentuk dasar hingga gambar kompleks untuk anak-anak",
+      "chapters": [
+        "Pengenalan Alat Menggambar",
+        "Bentuk-Bentuk Dasar",
+        "Menggambar Hewan",
+        "Menggambar Pemandangan",
+        "Teknik Mewarnai",
+        "Kreativitas dan Imajinasi"
+      ],
+      "download_count": 1542
+    },
+    {
+      "id": 2,
+      "title": "Seni Rupa Kreatif untuk Pemula",
+      "author": "Guru Sarah",
+      "pages": 150,
+      "file_size": "20 MB",
+      "format": "PDF",
+      "category": "Seni Rupa",
+      "age_range": "7-13 tahun",
+      "cover_image": "book-cover-2.jpg",
+      "description": "Eksplorasi berbagai teknik seni rupa yang menyenangkan dan edukatif",
+      "chapters": [
+        "Pengenalan Seni Rupa",
+        "Kolase dan Montase",
+        "Origami Seni Lipat Kertas",
+        "Kerajinan dari Bahan Daur Ulang",
+        "Seni 3D dan Patung",
+        "Proyek Seni Kelompok"
+      ],
+      "download_count": 1203
+    },
+    {
+      "id": 3,
+      "title": "Warna-Warni Dunia Anak",
+      "author": "Dr. Arti Pendidikan",
+      "pages": 100,
+      "file_size": "12 MB",
+      "format": "PDF",
+      "category": "Teori Warna",
+      "age_range": "5-10 tahun",
+      "cover_image": "book-cover-3.jpg",
+      "description": "Belajar tentang warna, kombinasi warna, dan psikologi warna dalam seni anak",
+      "chapters": [
+        "Mengenal Warna Primer",
+        "Kombinasi Warna Sekunder",
+        "Warna-warna Cerah dan Gelap",
+        "Makna Psikologis Warna",
+        "Harmoni Warna dalam Karya",
+        "Eksperimen dengan Warna"
+      ],
+      "download_count": 987
+    },
+    {
+      "id": 4,
+      "title": "Animasi Sederhana untuk Anak",
+      "author": "Tim Kreatif Ruang Anak",
+      "pages": 80,
+      "file_size": "25 MB",
+      "format": "PDF (Interactive)",
+      "category": "Digital Art",
+      "age_range": "8-13 tahun",
+      "cover_image": "book-cover-4.jpg",
+      "description": "Panduan membuat animasi sederhana menggunakan tools digital",
+      "chapters": [
+        "Pengenalan Animasi",
+        "Storyboard dan Planning",
+        "Frame-by-Frame Animation",
+        "Digital Animation Tools",
+        "Sound dan Music",
+        "Publishing Animation"
+      ],
+      "download_count": 756
+    }
+  ],
+  "print_books": [
+    {
+      "id": 1,
+      "title": "Album Karya Anak Indonesia",
+      "author": "Penerbit Ruang Anak",
+      "pages": 200,
+      "price": 150000,
+      "isbn": "978-602-1234-567-8",
+      "format": "Hardcover",
+      "dimensions": "21 x 29.7 cm",
+      "weight": "800 gram",
+      "cover_image": "print-book-1.jpg",
+      "description": "Koleksi karya terbaik anak-anak Indonesia dari berbagai usia",
+      "features": [
+        "Kertas premium glossy",
+        "Full color printing",
+        "Sertifikat autentik",
+        "Bonus bookmark kustom"
+      ],
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "title": "Seni Lukis Komplit Indonesia",
+      "author": "Maestro Seni Indonesia",
+      "pages": 350,
+      "price": 250000,
+      "isbn": "978-602-1234-568-5",
+      "format": "Hardcover Premium",
+      "dimensions": "25 x 35 cm",
+      "weight": "1.2 kg",
+      "cover_image": "print-book-2.jpg",
+      "description": "Ensiklopedia lengkap seni lukis Indonesia dari tradisional hingga modern",
+      "features": [
+        "Kertas art paper premium",
+        "Sistem binding premium",
+        "Dustcover eksklusif",
+        "Certificate of authenticity"
+      ],
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "title": "Workshop Seni Anak: 101 Proyek Kreatif",
+      "author": "Guru Budi dan Team",
+      "pages": 280,
+      "price": 175000,
+      "isbn": "978-602-1234-569-2",
+      "format": "Softcover",
+      "dimensions": "19 x 24 cm",
+      "weight": "600 gram",
+      "cover_image": "print-book-3.jpg",
+      "description": "101 proyek seni kreatif yang bisa dilakukan anak dengan bahan sederhana",
+      "features": [
+        "Step-by-step photos",
+        "Templates yang bisa dicopy",
+        "Difficulty indicators",
+        "Age recommendations"
+      ],
+      "stock": 100
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Teknik Dasar",
+      "description": "Panduan teknik menggambar dan melukis dasar",
+      "icon": "fas fa-pencil-alt"
+    },
+    {
+      "id": 2,
+      "name": "Seni Rupa",
+      "description": "Seni tiga dimensi dan kerajinan tangan",
+      "icon": "fas fa-cube"
+    },
+    {
+      "id": 3,
+      "name": "Teori Warna",
+      "description": "Teori dan aplikasi warna dalam seni",
+      "icon": "fas fa-palette"
+    },
+    {
+      "id": 4,
+      "name": "Digital Art",
+      "description": "Seni digital dan animasi",
+      "icon": "fas fa-tablet-alt"
+    },
+    {
+      "id": 5,
+      "name": "Seni Tradisional",
+      "description": "Seni tradisional Indonesia",
+      "icon": "fas fa-landmark"
+    }
+  ],
+  "age_groups": [
+    {
+      "id": 1,
+      "range": "5-7 tahun",
+      "description": "TK dan Kelas 1-2 SD",
+      "focus": "Motorik halus, warna dasar, bentuk sederhana"
+    },
+    {
+      "id": 2,
+      "range": "8-10 tahun",
+      "description": "Kelas 3-4 SD",
+      "focus": "Komposisi, detail, teknik dasar"
+    },
+    {
+      "id": 3,
+      "range": "11-13 tahun",
+      "description": "Kelas 5-6 SD dan SMP",
+      "focus": "Teknik lanjut, ekspresi, konsep"
+    }
+  ]
+}

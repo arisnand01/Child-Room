@@ -1,0 +1,162 @@
+{
+  "general_knowledge": [
+    {
+      "id": 1,
+      "question": "Apa warna bendera Indonesia?",
+      "options": ["Merah Putih", "Biru Kuning", "Hijau Putih", "Merah Kuning"],
+      "correct": 0,
+      "age_group": "5-7"
+    },
+    {
+      "id": 2,
+      "question": "Berapa jumlah hari dalam seminggu?",
+      "options": ["5 hari", "6 hari", "7 hari", "8 hari"],
+      "correct": 2,
+      "age_group": "5-7"
+    },
+    {
+      "id": 3,
+      "question": "Hari apa setelah hari Senin?",
+      "options": ["Minggu", "Selasa", "Rabu", "Kamis"],
+      "correct": 1,
+      "age_group": "5-7"
+    },
+    {
+      "id": 4,
+      "question": "Apa nama ibu kota Indonesia?",
+      "options": ["Surabaya", "Bandung", "Jakarta", "Medan"],
+      "correct": 2,
+      "age_group": "8-10"
+    },
+    {
+      "id": 5,
+      "question": "Berapa hasil dari 7 + 5?",
+      "options": ["10", "11", "12", "13"],
+      "correct": 2,
+      "age_group": "8-10"
+    },
+    {
+      "id": 6,
+      "question": "Apa planet terdekat dengan matahari?",
+      "options": ["Venus", "Merkurius", "Bumi", "Mars"],
+      "correct": 1,
+      "age_group": "11-13"
+    },
+    {
+      "id": 7,
+      "question": "Siapa penemu bola lampu?",
+      "options": ["Albert Einstein", "Thomas Edison", "Isaac Newton", "Nikola Tesla"],
+      "correct": 1,
+      "age_group": "11-13"
+    },
+    {
+      "id": 8,
+      "question": "Berapa jumlah provinsi di Indonesia?",
+      "options": ["30", "34", "38", "42"],
+      "correct": 2,
+      "age_group": "11-13"
+    }
+  ],
+  "personality": [
+    {
+      "id": 1,
+      "question": "Apa yang paling kamu suka saat waktu luang?",
+      "options": ["Menggambar atau mewarnai", "Bermain dengan teman", "Membaca buku", "Bermain game"],
+      "trait": "creative"
+    },
+    {
+      "id": 2,
+      "question": "Ketika ada masalah, kamu biasanya...",
+      "options": ["Mencari solusi sendiri", "Minta bantuan teman", "Tanya orang tua", "Menyerah dulu"],
+      "trait": "independent"
+    },
+    {
+      "id": 3,
+      "question": "Apa warna favoritmu?",
+      "options": ["Merah oranye", "Biru hijau", "Ungu pink", "Kuning coklat"],
+      "trait": "emotional"
+    },
+    {
+      "id": 4,
+      "question": "Di tempat yang baru, kamu akan...",
+      "options": ["Mendekati orang lain", "Menunggu pendekatan", "Mencari tempat sepi", "Mengamati dulu"],
+      "trait": "social"
+    },
+    {
+      "id": 5,
+      "question": "Apa hobi yang paling menarik bagimu?",
+      "options": ["Seni dan musik", "Olahraga", "Sains dan teknologi", "Petualangan alam"],
+      "trait": "interest"
+    },
+    {
+      "id": 6,
+      "question": "Ketika sedang belajar, kamu lebih suka...",
+      "options": ["Melihat gambar", "Mendengarkan penjelasan", "Mencoba langsung", "Membaca tulisan"],
+      "trait": "learning_style"
+    },
+    {
+      "id": 7,
+      "question": "Apa yang membuatmu paling bahagia?",
+      "options": ["Menciptakan sesuatu", "Membantu orang lain", "Memenangkan kompetisi", "Waktu bersama keluarga"],
+      "trait": "motivation"
+    },
+    {
+      "id": 8,
+      "question": "Apa yang ingin kamu jadi saat besar?",
+      "options": ["Seniman atau desainer", "Dokter atau guru", "Ilmuwan atau insinyur", "Pengusaha atau pemimpin"],
+      "trait": "aspiration"
+    }
+  ],
+  "interpretations": {
+    "creative": {
+      "title": "Tipe Kreatif dan Artistik",
+      "description": "Anak memiliki bakat seni yang tinggi dan imajinasi yang kaya. Suka mengekspresikan diri melalui gambar, warna, dan musik.",
+      "recommendations": [
+        "Dorong untuk mengikuti kelas seni",
+        "Sediakan alat menggambar dan mewarnai",
+        "Ajak ke museum atau pameran seni",
+        "Berikan kebebasan berekspresi"
+      ]
+    },
+    "social": {
+      "title": "Tipe Sosial dan Ekstrovert",
+      "description": "Anak mudah bergaul dan suka interaksi sosial. Memiliki kemampuan komunikasi yang baik.",
+      "recommendations": [
+        "Ikutkan kegiatan kelompok",
+        "Latih kemampuan public speaking",
+        "Ajarkan empati dan kerjasama",
+        "Beri kesempatan memimpin"
+      ]
+    },
+    "analytical": {
+      "title": "Tipe Analitis dan Logis",
+      "description": "Anak suka memecahkan masalah dan berpikir logis. Tertarik pada sains dan matematika.",
+      "recommendations": [
+        "Berikan teka-teki dan puzzle",
+        "Ajak eksperimen sederhana",
+        "Dorong bertanya mengapa",
+        "Sediakan buku sains"
+      ]
+    },
+    "empathetic": {
+      "title": "Tipe Empatis dan Peduli",
+      "description": "Anak peka terhadap perasaan orang lain dan suka membantu. Memiliki kecerdasan emosional yang tinggi.",
+      "recommendations": [
+        "Ajarkan tentang perasaan",
+        "Libatkan dalam kegiatan sosial",
+        "Beri contoh perilaku baik",
+        "Puji kebaikan hatinya"
+      ]
+    },
+    "adventurous": {
+      "title": "Tipe Petualang dan Energik",
+      "description": "Anak penuh energi dan suka tantangan baru. Gemar eksplorasi dan aktivitas fisik.",
+      "recommendations": [
+        "Ajak bermain outdoor",
+        "Coba olahraga baru",
+        "Dorong eksplorasi aman",
+        "Berikan tantangan sesuai usia"
+      ]
+    }
+  }
+}

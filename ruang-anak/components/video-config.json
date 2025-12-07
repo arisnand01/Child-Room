@@ -1,0 +1,136 @@
+{
+  "webrtc_config": {
+    "iceServers": [
+      {
+        "urls": "stun:stun.l.google.com:19302"
+      },
+      {
+        "urls": "stun:stun1.l.google.com:19302"
+      }
+    ]
+  },
+  "art_teachers": [
+    {
+      "id": 1,
+      "name": "Guru Sarah",
+      "specialization": "Seni Lukis",
+      "experience": "10 tahun",
+      "rating": 4.8,
+      "schedule": ["Senin 10:00", "Rabu 14:00", "Jumat 16:00"],
+      "bio": "Guru seni berpengalaman dengan spesialisasi melukis anak-anak",
+      "image": "teacher1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Guru Budi",
+      "specialization": "Seni Rupa",
+      "experience": "8 tahun",
+      "rating": 4.7,
+      "schedule": ["Selasa 09:00", "Kamis 13:00", "Sabtu 10:00"],
+      "bio": "Ahli seni rupa dengan pendekatan playful learning",
+      "image": "teacher2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Guru Maya",
+      "specialization": "Kerajinan Tangan",
+      "experience": "6 tahun",
+      "rating": 4.9,
+      "schedule": ["Senin 15:00", "Rabu 10:00", "Jumat 14:00"],
+      "bio": "Spesialis kerajinan tangan kreatif untuk anak",
+      "image": "teacher3.jpg"
+    }
+  ],
+  "psychiatrists": [
+    {
+      "id": 1,
+      "name": "Dr. Andini Sp.KJ",
+      "specialization": "Psikiater Anak",
+      "experience": "15 tahun",
+      "rating": 4.9,
+      "schedule": ["Senin 09:00-11:00", "Rabu 13:00-15:00", "Jumat 09:00-11:00"],
+      "bio": "Psikiater anak dengan fokus pada parenting dan perkembangan anak",
+      "image": "psych1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Rahman Sp.KJ",
+      "specialization": "Psikologi Anak",
+      "experience": "12 tahun",
+      "rating": 4.8,
+      "schedule": ["Selasa 14:00-16:00", "Kamis 10:00-12:00", "Sabtu 09:00-11:00"],
+      "bio": "Psikolog anak ahli dalam behavioral therapy",
+      "image": "psych2.jpg"
+    }
+  ],
+  "consultation_types": {
+    "parenting_basic": {
+      "title": "Konsultasi Parenting Dasar",
+      "duration": "60 menit",
+      "topics": [
+        "Teknik pengasuhan positif",
+        "Mengelola tantrum anak",
+        "Membangun bonding dengan anak",
+        "Disiplin tanpa kekerasan"
+      ]
+    },
+    "emotional_development": {
+      "title": "Perkembangan Emosional Anak",
+      "duration": "90 menit",
+      "topics": [
+        "Mengenali emosi anak",
+        "Mengajar kecerdasan emosional",
+        "Menangani anxiety anak",
+        "Building resilience"
+      ]
+    },
+    "learning_difficulties": {
+      "title": "Kesulitan Belajar",
+      "duration": "120 menit",
+      "topics": [
+        "Identifikasi learning disabilities",
+        "Strategi mengajar anak berkebutuhan khusus",
+        "Kolaborasi dengan sekolah",
+        "Intervensi dini"
+      ]
+    }
+  },
+  "art_class_types": {
+    "drawing_basic": {
+      "title": "Menggambar Dasar",
+      "duration": "45 menit",
+      "age_range": "5-7 tahun",
+      "materials": ["Kertas", "Pensil warna", "Penghapus"],
+      "objectives": [
+        "Mengenal bentuk dasar",
+        "Koordinasi tangan-mata",
+        "Warna dan kombinasi",
+        "Kreativitas bebas"
+      ]
+    },
+    "painting_intermediate": {
+      "title": "Melukis Tingkat Lanjut",
+      "duration": "60 menit",
+      "age_range": "8-10 tahun",
+      "materials": ["Kanvas", "Cat air", "Kuas", "Palet"],
+      "objectives": [
+        "Teknik mixing warna",
+        "Komposisi gambar",
+        "Shading dan tekstur",
+        "Ekspresi artistik"
+      ]
+    },
+    "digital_art": {
+      "title": "Seni Digital",
+      "duration": "50 menit",
+      "age_range": "11-13 tahun",
+      "materials": ["Tablet/PC", "Drawing software", "Stylus"],
+      "objectives": [
+        "Pengenalan tools digital",
+        "Digital painting techniques",
+        "Character design",
+        "Animation basics"
+      ]
+    }
+  }
+}

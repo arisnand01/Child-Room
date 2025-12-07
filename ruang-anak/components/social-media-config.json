@@ -1,0 +1,188 @@
+{
+  "platforms": {
+    "facebook": {
+      "name": "Facebook",
+      "api_url": "https://graph.facebook.com/v18.0/",
+      "app_id": "your_facebook_app_id",
+      "app_secret": "your_facebook_app_secret",
+      "page_id": "your_page_id",
+      "access_token": "your_access_token",
+      "features": ["photo_sharing", "video_sharing", "album_creation", "story_posting"],
+      "image_specs": {
+        "post": {
+          "recommended": "1200x630px",
+          "minimum": "600x315px"
+        },
+        "story": {
+          "recommended": "1080x1920px",
+          "minimum": "500x880px"
+        }
+      }
+    },
+    "instagram": {
+      "name": "Instagram",
+      "api_url": "https://graph.instagram.com/",
+      "app_id": "your_instagram_app_id",
+      "app_secret": "your_instagram_app_secret",
+      "business_account_id": "your_business_id",
+      "access_token": "your_access_token",
+      "features": ["photo_sharing", "reels_sharing", "story_posting", "carousel_posting"],
+      "image_specs": {
+        "post": {
+          "square": "1080x1080px",
+          "portrait": "1080x1350px",
+          "landscape": "1080x566px"
+        },
+        "story": {
+          "recommended": "1080x1920px",
+          "minimum": "500x880px"
+        },
+        "reels": {
+          "recommended": "1080x1920px",
+          "aspect_ratio": "9:16"
+        }
+      }
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "api_url": "https://open-api.tiktok.com/",
+      "app_key": "your_tiktok_app_key",
+      "app_secret": "your_tiktok_app_secret",
+      "access_token": "your_access_token",
+      "features": ["video_sharing", "duet_creation", "stitch_creation"],
+      "video_specs": {
+        "recommended": "1080x1920px",
+        "aspect_ratio": "9:16",
+        "max_duration": "60 seconds",
+        "min_duration": "15 seconds"
+      }
+    },
+    "youtube": {
+      "name": "YouTube",
+      "api_url": "https://www.googleapis.com/youtube/v3/",
+      "api_key": "your_youtube_api_key",
+      "channel_id": "your_channel_id",
+      "features": ["video_upload", "playlist_creation", "shorts_upload", "livestreaming"],
+      "video_specs": {
+        "standard": {
+          "recommended": "1920x1080px (1080p)",
+          "aspect_ratio": "16:9"
+        },
+        "shorts": {
+          "recommended": "1080x1920px",
+          "aspect_ratio": "9:16",
+          "max_duration": "60 seconds"
+        }
+      }
+    }
+  },
+  "content_templates": {
+    "artwork_post": {
+      "facebook": {
+        "template": "🎨 Karya Amazing dari Anak Indonesia! 🇮🇩\n\n{artist_name} ({age} tahun) menciptakan karya berjudul &quot;{artwork_title}&quot; menggunakan {technique}.\n\nMari dukung dan apresiasi karya anak bangsa dengan memberikan ❤️ dan komentar positif!\n\n#RuangAnak #SeniAnakIndonesia #KreativitasAnak #BakatAnak",
+        "hashtags": ["RuangAnak", "SeniAnakIndonesia", "KreativitasAnak", "BakatAnak", "ArtForKids"]
+      },
+      "instagram": {
+        "template": "🎨 Karya Spesial Hari Ini!\n\n✨ {artist_name} ({age} tahun)\n🖼️ &quot;{artwork_title}&quot;\n🎯 {technique}\n\nMari dukung talenta muda Indonesia! Follow @ruanganak.id untuk lebih banyak karya amazing anak-anak kita.\n\n#RuangAnak #SeniAnak #KaryaAnakIndonesia #KidsArt #IndonesianArtists",
+        "hashtags": ["RuangAnak", "SeniAnak", "KaryaAnakIndonesia", "KidsArt", "IndonesianArtists", "ArtEducation"]
+      },
+      "tiktok": {
+        "template": "Proses kreatif behind the scenes! 🎨✨\n\n{artist_name} ({age} tahun) lagi seru-serunya {process_description}\n\nHasilnya? Amazing banget! 👀\n\n#RuangAnak #KidsArt #CreativeProcess #SeniAnakIndonesia #ViralArt",
+        "hashtags": ["RuangAnak", "KidsArt", "CreativeProcess", "SeniAnakIndonesia", "ViralArt", "ArtChallenge"]
+      },
+      "youtube": {
+        "template": "Sesi Kreatif Bersama {artist_name} ({age} tahun)\n\n🎨 Karya: {artwork_title}\n🎯 Teknik: {technique}\n⏱️ Durasi: {duration}\n\nTonton proses kreatif anak Indonesia menciptakan karya amazingnya! Jangan lupa LIKE, SUBSCRIBE, dan SHARE untuk dukung talenta muda kita.\n\n#RuangAnak #SeniAnakIndonesia #KreativitasAnak #ArtTutorial",
+        "hashtags": ["RuangAnak", "SeniAnakIndonesia", "KreativitasAnak", "ArtTutorial"]
+      }
+    },
+    "achievement_post": {
+      "facebook": {
+        "template": "🏆 Selamat! Prestasi Luar Biasa 🏆\n\n{student_name} berhasil meraih {achievement} di {event_name}!\n\nTerima kasih atas dukungan orang tua dan guru yang telah membimbing. Semoga inspirasi ini bisa memotivasi anak-anak lainnya.\n\n#RuangAnakAchievement #PrestasiAnak #EdukasiSeni",
+        "hashtags": ["RuangAnakAchievement", "PrestasiAnak", "EdukasiSeni", "ProudMoment"]
+      },
+      "instagram": {
+        "template": "🏆 ACHIEVEMENT UNLOCKED! 🏆\n\n{student_name}\n🎖️ {achievement}\n📍 {event_name}\n\nProud moment alert! ✨ Konsistensi dan kerja keras membuahkan hasil amazing!\n\n#RuangAnak #StudentAchievement #ProudMoment #ArtCompetition #KidsSuccess",
+        "hashtags": ["RuangAnak", "StudentAchievement", "ProudMoment", "ArtCompetition", "KidsSuccess"]
+      }
+    },
+    "learning_post": {
+      "facebook": {
+        "template": "📚 Tips Parenting Hari Ini 📚\n\n{tip_title}\n\n{tip_content}\n\nShare ke teman-teman orang tua lainnya yang mungkin butuh info ini!\n\n#RuangAnakParenting #TipsParenting #EdukasiAnak",
+        "hashtags": ["RuangAnakParenting", "TipsParenting", "EdukasiAnak", "ParentingTips"]
+      },
+      "instagram": {
+        "template": "💡 PARENTING TIP 💡\n\n{tip_title}\n\n{tip_content}\n\nSave post ini untuk reminder! Tag orang tua lain yang perlu info ini.\n\n#RuangAnak #ParentingTips #EdukasiAnak #OrangTuaHebat",
+        "hashtags": ["RuangAnak", "ParentingTips", "EdukasiAnak", "OrangTuaHebat", "TipsAnak"]
+      }
+    }
+  },
+  "posting_schedule": {
+    "optimal_times": {
+      "facebook": {
+        "weekday": "08:00, 12:00, 18:00",
+        "weekend": "09:00, 15:00, 20:00"
+      },
+      "instagram": {
+        "weekday": "07:00, 13:00, 19:00",
+        "weekend": "10:00, 16:00, 21:00"
+      },
+      "tiktok": {
+        "weekday": "12:00, 16:00, 20:00",
+        "weekend": "10:00, 14:00, 18:00"
+      },
+      "youtube": {
+        "weekday": "09:00, 14:00, 18:00",
+        "weekend": "10:00, 15:00, 19:00"
+      }
+    },
+    "frequency": {
+      "facebook": "2 posts per day",
+      "instagram": "3 posts per day",
+      "tiktok": "1-2 posts per day",
+      "youtube": "3 videos per week"
+    }
+  },
+  "engagement_strategies": {
+    "call_to_actions": [
+      "Tag teman-teman yang suka seni!",
+      "Share karya anak kamu di comment!",
+      "Like dan follow untuk lebih banyak inspirasi!",
+      "Comment teknik favorit kamu!",
+      "Save post ini untuk referensi!"
+    ],
+    "engagement_questions": [
+      "Warna apa yang paling kamu suka dalam karya ini?",
+      "Karya anak mana yang paling kamu suka?",
+      "Teknik seni apa yang mau kamu pelajari?",
+      "Siapa yang mau coba challenge ini?",
+      "Karya apa yang mau kamu buat berikutnya?"
+    ],
+    "contest_ideas": [
+      "Weekly Art Challenge",
+      "Color of the Week",
+      "Theme of the Month",
+      "Parent & Child Art Challenge",
+      "Recycled Art Competition"
+    ]
+  },
+  "analytics_tracking": {
+    "metrics_to_track": [
+      "engagement_rate",
+      "reach",
+      "impressions",
+      "saves",
+      "shares",
+      "comments",
+      "video_views",
+      "video_completion_rate",
+      "follower_growth",
+      "click_through_rate"
+    ],
+    "reporting_frequency": "weekly",
+    "goals": {
+      "monthly_follower_growth": "10%",
+      "engagement_rate_target": "5%",
+      "video_completion_rate": "70%"
+    }
+  }
+}
